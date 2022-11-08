@@ -6,6 +6,10 @@ DDNS scripts for tencent cloud
 
 [Jasecharloote](https://github.com/Jasecharloote)
 
+# Dockerhub link
+
+[auto-ddns](https://hub.docker.com/r/jasecharloote/auto-ddns)
+
 # Goal
 
 update DNS record automatically from the server. The record is updated every minute.
