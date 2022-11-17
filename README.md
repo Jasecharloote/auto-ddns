@@ -47,4 +47,4 @@ For a first-time user with a domain already purchased, do the following:
 # Command
 The following steps must be run every time this container is manually started:
 
-`docker run -e TC3_DNSPOD_DOMAIN=<TC3_DNSPOD_SUB_DOMAIN> -e TC3_DNSPOD_SUB_DOMAIN=<TC3_DNSPOD_SUB_DOMAIN> -e TC3_SECRET_ID=<TC3_SECRET_ID> -e TC3_SECRET_KEY=<TC3_SECRET_KEY> -d --restart always --name auto-ddns jasecharloote/auto-ddns:latest`
+`docker run -e TC3_DNSPOD_DOMAIN=<TC3_DNSPOD_SUB_DOMAIN> -e TC3_DNSPOD_SUB_DOMAIN=<TC3_DNSPOD_SUB_DOMAIN> -e TC3_SECRET_ID=<TC3_SECRET_ID> -e TC3_SECRET_KEY=<TC3_SECRET_KEY> -d --restart always --name auto-ddns jasecharloote/auto-ddns:slim`
