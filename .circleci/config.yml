@@ -16,6 +16,7 @@ jobs:
       - docker/check
       - setup_remote_docker:
           version: 20.10.14
+      - github-cli/setup
       - github-cli/clone
       - docker/build:
           image: jasecharloote/auto-ddns 
