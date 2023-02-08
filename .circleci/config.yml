@@ -12,7 +12,9 @@ jobs:
       # replace with your preferred image
       - image: cimg/base:stable
     steps:
-      - docker/install-docker
+      - docker/check
+      - setup_remote_docker:
+          version: 20.10.14
       - docker/build:
           image: jasecharloote/auto-ddns 
           tag: slim 
