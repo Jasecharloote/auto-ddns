@@ -2,7 +2,6 @@
 # See: https://circleci.com/docs/2.0/configuration-reference
 orbs:
   docker: circleci/docker@1.7.0
-  github-cli: circleci/github-cli@2.2.0
 version: 2.1
 
 # Define a job to be invoked later in a workflow.
@@ -16,8 +15,7 @@ jobs:
       - docker/check
       - setup_remote_docker:
           version: 20.10.14
-      - github-cli/setup
-      - github-cli/clone
+      - checkout
       - docker/build:
           image: jasecharloote/auto-ddns 
           tag: slim 
