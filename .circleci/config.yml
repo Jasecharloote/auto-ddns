@@ -12,6 +12,10 @@ jobs:
       # replace with your preferred image
       - image: cimg/base:stable
     steps:
+      - docker/install-docker
+      - docker/build:
+          image: jasecharloote/auto-ddns 
+          tag: slim 
       - docker/push:
           image: jasecharloote/auto-ddns 
           tag: slim 
