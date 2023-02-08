@@ -202,4 +202,4 @@ if __name__ == '__main__':
         # 更新动态DNS记录
         update_sub_domain_dns(sub_domain_record_id)
         # 休眠60s
-        time.sleep(sleep_secs)
+        time.sleep(int(sleep_secs))

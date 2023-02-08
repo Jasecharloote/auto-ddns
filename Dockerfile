@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM python:3.10-slim
 ADD signature.py /signature.py
 RUN pip install requests
 ENV TERM=xterm
