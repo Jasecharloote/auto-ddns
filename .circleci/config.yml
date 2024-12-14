@@ -13,8 +13,7 @@ jobs:
       - image: cimg/base:stable
     steps:
       - docker/check
-      - setup_remote_docker:
-          version: 20.10.14
+      - setup_remote_docker
       - checkout
       - docker/build:
           image: jasecharloote/auto-ddns 
