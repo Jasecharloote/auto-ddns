@@ -94,7 +94,8 @@ def execute_api_method(action, params, host='dnspod.tencentcloudapi.com', servic
 
 
 def get_real_public_ip():
-    ip_url = 'https://api.ipify.org'
+    #ip_url = 'https://api.ipify.org'
+    ip_url = 'https://ipinfo.io/ip'
     return requests.get(ip_url, proxies=get_proxies())
 
 
